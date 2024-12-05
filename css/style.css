@@ -50,3 +50,19 @@ body {
     filter: brightness(0.2);
     transform: translateZ(10px) rotateY(5deg);
 }
+
+/* For The Left Side Hover Effect */
+.list .item:has(+ *:hover) {
+    filter: brightness(0.8);
+    transform: translateZ(80px) rotateY(-30deg);
+}
+
+.list .item:has(+ * + *:hover) {
+    filter: brightness(0.5);
+    transform: translateZ(25px) rotateY(-15deg);
+}
+
+.list .item:has(+ * + *:hover) {
+    filter: brightness(0.2);
+    transform: translateZ(10px) rotateY(-5deg);
+}
