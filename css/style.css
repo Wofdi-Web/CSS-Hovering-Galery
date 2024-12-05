@@ -1,30 +1,36 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../assets/backgorund.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: black;
     height: 100vh;
 }
 
 .list {
-    background: black;
-    width: 100vw;
     height: 100vh;
-    opacity: 0.85;
+    width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: white;
+    justify-content: center;
 }
 
-.item {
-    opacity: 1;
+.item img {
+    width: 120px;
+    height: 200px;
+}
+
+/* Actual Code */
+.list {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.list .item {
     margin: 0.2em;
-    padding: 5em 3em;
-    background-image: url(../assets/img-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    transition: 0.5s ease;
+    filter: brightness(0.1);
+}
+
+.list .item:hover {
+    filter: brightness(1);
+    transform: translateZ(100px);
 }
