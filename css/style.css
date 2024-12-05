@@ -27,10 +27,26 @@ body {
 .list .item {
     margin: 0.2em;
     transition: 0.5s ease;
-    filter: brightness(0.1);
+    filter: brightness(0);
 }
 
 .list .item:hover {
     filter: brightness(1);
     transform: translateZ(100px);
+}
+
+/* Diffcult Part */
+.list .item:hover + * {
+    filter: brightness(0.8);
+    transform: translateZ(80px) rotateY(30deg);
+}
+
+.list .item:hover + * + * {
+    filter: brightness(0.5);
+    transform: translateZ(25px) rotateY(15deg);
+}
+
+.list .item:hover + * + * + * {
+    filter: brightness(0.2);
+    transform: translateZ(10px) rotateY(5deg);
 }
