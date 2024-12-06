@@ -62,7 +62,7 @@ body {
     transform: translateZ(25px) rotateY(-15deg);
 }
 
-.list .item:has(+ * + *:hover) {
+.list .item:has(+ * + * + *:hover) {
     filter: brightness(0.2);
     transform: translateZ(10px) rotateY(-5deg);
 }
