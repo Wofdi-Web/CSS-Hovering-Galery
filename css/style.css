@@ -27,7 +27,7 @@ body {
 .list .item {
     margin: 0.2em;
     transition: 0.5s ease;
-    filter: brightness(0);
+    filter: brightness(0.2);
 }
 
 .list .item:hover {
